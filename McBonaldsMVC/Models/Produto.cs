@@ -1,13 +1,6 @@
-using System;
-
-namespace McBonaldsMVC.Models{
-
-    public class Produto
-    {
-        public string Nome {get;set;}
-        
-
-        public double Preco {get;set;}
-        
+namespace McBonaldsMVC.Models {
+    public class Produto {
+        public string Nome { get; set; }
+        public double preco { get; set; }
     }
 }

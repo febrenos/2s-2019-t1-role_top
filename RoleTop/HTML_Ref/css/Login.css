@@ -1,0 +1,25 @@
+/*********************************************
+                    LOGIN
+**********************************************/
+.logincor{
+    background-color: #8e20b3;
+}
+.logincor h2{
+    color: #8e20b3; 
+    text-shadow: 
+    -1px -1px 0 #ffe414,
+    1px -1px 0 #ffe414,
+    -1px  1px 0 #ffe414,
+    1px  1px 0 #ffe414;
+}
+.login{
+    align-items: center;
+    font-size: 1em;
+}
+nav ul > li > a {
+	display: block;
+	padding: 0.4em;
+    text-decoration: none;
+    color: #582768;
+    font-weight: bold;
+}

@@ -1,31 +1,31 @@
-// classe model são as definiçoes que o cliente tem, as caracteristicas, o que ele faz
-//São classes de definiçoes
 using System;
 
-namespace McBonaldsMVC.Models
-{
-    public class Cliente
-    {
-        public string Nome { get; set; }  // liga parametro no atributo 
-        public string Senha { get; set; }
+namespace McBonaldsMVC.Models {
+    public class Cliente {
+        public string Nome { get; set; }
         public string Endereco { get; set; }
         public string Telefone { get; set; }
+        public string Senha { get; set; }
+
         public string Email { get; set; }
-        public DateTime DataNascimento { get; set; }
 
-        public Cliente()
-        {
+        public DateTime dataNascimento { get; set; }
+        public uint TipoUsuario {get;set;}
+        public int TipoUsusario { get; internal set; }
 
-        }
-        public Cliente(string nome, string endereço, string telefone, string senha, string email, DateTime datanascimento)
-        {
-            this.Nome = nome;
-            this.Endereco = endereço;
+        public Cliente (string Nome, string endereco, string telefone, string senha, string email, DateTime dataNascimento) {
+
+            this.Nome = Nome;
+            this.Endereco = endereco ;
             this.Telefone = telefone;
             this.Senha = senha;
             this.Email = email;
-            this.DataNascimento = datanascimento;
+            this.dataNascimento = dataNascimento;
         }
 
+        public Cliente()
+        {
+            
+        }
     }
 }
