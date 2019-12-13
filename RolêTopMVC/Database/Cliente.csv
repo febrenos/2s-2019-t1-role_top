@@ -1,0 +1,6 @@
+tipo_usuario=0;nome=Administrador;email=admin@email.com;senha=1234567;endereco=;telefone=;data_nascimento=11/11/199 00:00:00
+tipo_usuario=1;nome=aaaaa;email=aaaa@222.com;senha=1234567;endereco=rua jose;telefone=4677-8977;data_nascimento=11/11/1999 00:00:00
+tipo_usuario=1;nome=Fabio;email=email@email;senha=26238325;endereco=04598;telefone=2222222;data_nascimento=29/10/2002 00:00:00
+tipo_usuario=1;nome=Fabio;email=email@email;senha=26238325;endereco=04598;telefone=2222222;data_nascimento=29/10/2002 00:00:00
+tipo_usuario=1;nome=Fabio;email=email@email;senha=26238325;endereco=04598;telefone=2222222;data_nascimento=29/10/2002 00:00:00
+tipo_usuario=1;nome=Cesar;email=email@email;senha=26238325;endereco=04598;telefone=9999999;data_nascimento=29/10/2002 00:00:00

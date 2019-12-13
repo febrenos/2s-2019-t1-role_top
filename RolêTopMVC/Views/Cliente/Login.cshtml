@@ -1,0 +1,27 @@
+<main>
+    <div class= "logincor">
+        <section id="Login">
+            <h2>Login</h2>
+            <form method="POST" action='@Url.Action("Login", "Cliente")'>
+            
+                <div>
+                    <label for="email">E-mail</label>
+                    <br />
+                    <input id="email" type="email" name="email" rqeuired/>
+                </div>
+
+                <div>
+                    <label for="senha">Senha</label>
+                    <br />
+                    <input id="senha" type="password" name="senha" rqeuired/>
+                </div>
+
+                <input type="submit" value="Entrar!" />
+                <div id="link-cadastro">
+                    <a href='@Url.Action("Index", "Cadastro")'>Sou novo!</a>
+                </div>
+
+            </form>
+        </section>
+    </div>
+</main>
