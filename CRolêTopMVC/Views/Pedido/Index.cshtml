@@ -1,0 +1,61 @@
+    @model RolêTopMVC.ViewModels.PedidoViewModel
+    <main>
+        <section id="Forma">
+                <br>
+                <h2>Reseve seu local @Model.NomeCliente!</h2>
+                <form method="POST" action='@Url.Action("Registrar","Pedido")'>
+                    <br>
+                        <label for="nome">Nome Completo:</label>
+                    <br />
+                        <input id="nome" type="text" maxlength="50" minlength="3" value="@Model.Cliente.Nome" name="nome" />
+                    <br>
+                        <label for="endereco">Endereço:</label>
+                    <br />
+                        <input id="endereco" type="text" maxlength="60" minlength="3" value="@Model.Cliente.Endereco" name="endereco" />
+                    <br>
+                        <label for="telefone">Telefone:</label>
+                    <br />
+                        <input id="telefone" type="text"  maxlength="13" minlength="8" value="@Model.Cliente.Telefone" name="telefone"/>
+                    <br>
+                        <label for="email">E-mail:</label>
+                    <br />
+                        <input id="email" type="email" maxlength="50" minlength="3" value="@Model.Cliente.Email" name="email"/>
+                    <br>
+                <div class="double-field">
+                    <div>
+                        <label for="hamburguer">Hamburguer</label>
+                        <select id="hamburguer" name="hamburguer" required>
+                            <option value="" disabled selected>Selecione</option>
+                            @foreach (var hamburguer in Model.Hamburgueres)
+                            {
+                                <option value=@hamburguer.Nome>@hamburguer.Nome por @hamburguer.Preco
+
+                                </option>
+                            }
+                        </select>
+                    </div>
+                    <div>
+                        <label for="shake">Shake</label>
+                        <select id="shake" name="shake">
+                            <option value="" disabled selected>Selecione</option>
+                            @foreach (var shake in Model.Shakes)
+                            {
+                                <option value="@shake.Nome">@shake.Nome por @shake.Preco
+
+                                </option>
+                            }
+                        </select>
+                    </div>
+                        <label for="dia">Selecione o dia e o evento:</label>
+                        <br>
+                        <input id="dia" type="date">
+                            <div class= "Confirmar">
+                                <p>*Você receberá um e-mail confirmando se o dia está disponível.</p>
+                            </div>
+                        <div class="entrar">
+                            <input type="submit" value="reservar" />
+                        </div>
+                    </form>
+                </div>
+        </section>
+    </main>

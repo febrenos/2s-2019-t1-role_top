@@ -1,0 +1,131 @@
+body {
+    padding: 0px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    margin-top: 5em;
+    
+}
+
+#painel {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+h2 {
+    font-size: 1.8em;
+    text-shadow: 
+    -2px -2px 0 #FFC600,
+    2px -2px 0 #FFC600,
+    -2px  2px 0 #FFC600,
+    2px  2px 0 #FFC600; 
+    padding-bottom: 30px;
+}
+
+h3 {
+    padding: 0.5em 0;
+    font-size: 1.3em;
+    color: #361a0c;
+    text-shadow: 
+    -1px -1px 0 #FFf,
+    1px -1px 0 #FFf,
+    -1px  1px 0 #FFf,
+    1px  1px 0 #FFf;
+}
+
+h4 {
+    font-size: 25px;
+    font-family:'Rokkitt', serif;
+}
+
+.box-status-pedidos {
+    width: 30%;
+    padding-top: .5em;
+    text-align: center;
+}
+.box-status-pedidos > p {
+    font-size: 2em;
+    padding: 0.5em 0 0 0;
+}
+
+.box-status-pedidos.reprovados {
+    background-color: #a70000;
+    
+}
+
+.box-status-pedidos.aprovados {
+    background-color: #669100;
+}
+
+.box-status-pedidos.pendentes {
+    background-color: #ff9933;
+}
+
+
+table {
+    text-align: center;
+    color: #fff;
+    border: 1px dashed #ff9933;
+    width: 650px ;
+    padding: 5px;
+    word-break: normal;
+}
+
+table th {
+    background-color:#FFC600;
+    color: #7000a3;
+    
+}
+
+
+table a {
+    text-decoration: none;
+    color: #FFC600;
+    
+}
+
+table a:hover {
+    text-decoration: underline;
+    
+}
+
+tfoot td {
+    text-align: center;
+    color: #7000a3;
+    background-color: #FFC600;
+    
+    
+}
+
+thead > tr:first-child > th:last-child {
+    padding: 0 .5em;
+}
+
+@media (max-width: 625px) {
+    main {
+        width: 90%;
+    }
+
+    h4 {
+        font-size: 1em;
+    }
+}
+
+.titulo
+{
+    color: #8e20b3;
+    text-shadow: 
+        -1px -1px 0 #ffe414, 
+        1px -1px 0 #ffe414, 
+        -1px 1px 0 #ffe414, 
+        1px 1px 0 #ffe414;
+}
+.c
+{
+    background-color: #8e20b3;
+}
+
+
